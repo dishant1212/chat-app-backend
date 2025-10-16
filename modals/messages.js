@@ -9,6 +9,18 @@ const messagesSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  status: {
+    type: String,
+    require: true,
+  },
+  createdAt: {
+    type: String,
+    require: true,
+  },
+  id: {
+    type: String,
+    require: true,
+  },
 });
 
 const Messages = mongoose.model('messages', messagesSchema);
